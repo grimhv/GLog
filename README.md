@@ -15,7 +15,7 @@ logger.Warning("This is a warning message");
 logger.Error("Error message");
 ```
 
-You can log string, string[], or List<string>.  If you try anything else, it will attempt to parse it as a string.
+You can log string, string[], List\<string\>, or Exceptions.  If you try anything else, it will attempt to convert it to a string.
 
 Public GLog Properties:
 ```
@@ -74,3 +74,5 @@ INTR 10/27/2020 01:52:02 PM: Attempted to write to log, but string was empty.
 CUST 10/27/2020 01:52:02 PM: Custom message!
 NEWC 10/27/2020 01:52:02 PM: Changed the custom message notation!
 ```
+
+Also allows you to clear a log with `ClearLog()`
