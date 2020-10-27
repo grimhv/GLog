@@ -25,14 +25,21 @@ Public GLog Properties:
   bool TabulateEntries   // whether to add a tab (4 spaces) to lines after the first
   string DateFormat      // custom DateTime format, defaults to "MM/dd/yyyy hh:mm:ss tt"
 ```
-
+Public GLog Methods:
+```
+  Custom()               // These all generate a log entry using the appropriate Level notation
+  Debug()
+  Warning()
+  Error()
+  Critical()
+```
 GLog.Level Properties:
 ```
-  string Warning  // string for warning notation, default "WARN"
-  string Error    // string for error notation, default "ERRO"
-  string Critical // string for critical notation, default "CRIT"
-  string Debug    // string for debug notation, default "DEBU"
-  string Custom   // string for custom notation, default "CUST"
+  string Warning         // string for warning notation, default "WARN"
+  string Error           // string for error notation, default "ERRO"
+  string Critical        // string for critical notation, default "CRIT"
+  string Debug           // string for debug notation, default "DEBU"
+  string Custom          // string for custom notation, default "CUST"
 ```
 
 An example log generated while testing with default settings looks like this:
