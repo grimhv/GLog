@@ -6,16 +6,16 @@ using System.Text.RegularExpressions;
 
 namespace Honeypox.GLog
 {
-    class GLog
+    class Logger
     {
         /// <summary> Used to customize the text for the event level of an entry </summary>
         public class LogLevel
         {
             // References parent class Glog
-            private GLog _gLog;
-            public LogLevel(GLog gLog)
+            private Logger _logger;
+            public LogLevel(Logger logger)
             {
-                _gLog = gLog;
+                _logger = logger;
             }
 
             public string Warning { get; set; } = "WARN";
