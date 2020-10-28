@@ -28,7 +28,7 @@ namespace Honeypox.GLog
 
         // Allows reference to nested class LogLevel
         public LogLevel Level { get; set; }
-        public GLog()
+        public Logger()
         {
             this.Level = new LogLevel(this);
         }
