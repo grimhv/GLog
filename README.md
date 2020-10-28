@@ -7,7 +7,7 @@ It allows the user to log events to a file with some formatting, including DateT
 Usage is simple: add it to your project and then:
 ```
 using Honeypox.GLog
-GLog logger = new GLog
+Logger logger = new Logger
 {
     LogPath = "my_log.log";
 }
